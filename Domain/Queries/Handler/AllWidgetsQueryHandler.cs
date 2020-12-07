@@ -13,9 +13,9 @@ namespace WebAPI_CQRS.Domain.Queries.Handler
     {
         private readonly WidgetBusiness _widgetBusiness;
 
-        public AllWidgetsQueryHandler()
-        {
-            _widgetBusiness = new WidgetBusiness();
+        public AllWidgetsQueryHandler(WidgetBusiness widgetBusiness)
+        { 
+            _widgetBusiness = widgetBusiness;
         }
         public IEnumerable<WidgetDTO> Get()
         {

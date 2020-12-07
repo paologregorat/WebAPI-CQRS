@@ -10,6 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using WebAPI_CQRS.Business.Abstract;
+using WebAPI_CQRS.Business.Widget;
+using WebAPI_CQRS.Domain.Commands.Command;
+using WebAPI_CQRS.Domain.Commands.Handler;
 
 namespace WebAPI_CQRS
 {
@@ -26,6 +30,8 @@ namespace WebAPI_CQRS
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddScoped<IWidgetBusiness, WidgetBusiness>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

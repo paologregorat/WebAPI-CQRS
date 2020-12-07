@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebAPI_CQRS.Business.Abstract;
 using WebAPI_CQRS.Domain;
 using WebAPI_CQRS.Domain.Commands.Command;
 using WebAPI_CQRS.Domain.Entity;
@@ -9,7 +10,7 @@ using WebAPI_CQRS.Domain.Queries.Serializer;
 
 namespace WebAPI_CQRS.Business.Widget
 {
-    public class WidgetBusiness
+    public class WidgetBusiness: IWidgetBusiness
     {
         public List<WidgetDTO> GetAllWidgets()
         {

@@ -13,10 +13,10 @@ namespace WebAPI_CQRS.Domain.Commands.Handler
     {
         private readonly SaveWidgetCommand _command;
         private readonly WidgetBusiness _widgetBusiness;
-        public SaveWidgetCommandHandler(SaveWidgetCommand command)
+        public SaveWidgetCommandHandler(SaveWidgetCommand command, WidgetBusiness widgetBusiness)
         {
             _command = command;
-            _widgetBusiness = new WidgetBusiness();
+            _widgetBusiness = widgetBusiness;
         }
         public CommandResponse Execute()
         {

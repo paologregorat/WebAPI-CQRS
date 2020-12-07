@@ -13,10 +13,10 @@ namespace WebAPI_CQRS.Domain.Queries.Handler
     {
         private readonly OneWidgetQuery _query;
         private readonly WidgetBusiness _widgetBusiness;
-        public OneWidgetQueryHandler(OneWidgetQuery query)
+        public OneWidgetQueryHandler(OneWidgetQuery query, WidgetBusiness widgetBusiness)
         {
             _query = query;
-            _widgetBusiness = new WidgetBusiness();
+            _widgetBusiness = widgetBusiness;
         }
         public WidgetDTO Get()
         {
