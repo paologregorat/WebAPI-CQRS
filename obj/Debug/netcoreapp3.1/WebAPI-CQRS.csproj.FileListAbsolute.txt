@@ -17,3 +17,4 @@ C:\progetti\MyRepository\WebAPI-CQRS\obj\Debug\netcoreapp3.1\staticwebassets\Web
 C:\progetti\MyRepository\WebAPI-CQRS\obj\Debug\netcoreapp3.1\WebAPI-CQRS.dll
 C:\progetti\MyRepository\WebAPI-CQRS\obj\Debug\netcoreapp3.1\WebAPI-CQRS.pdb
 C:\progetti\MyRepository\WebAPI-CQRS\obj\Debug\netcoreapp3.1\WebAPI-CQRS.genruntimeconfig.cache
+C:\progetti\MyRepository\WebAPI-CQRS\obj\Debug\netcoreapp3.1\WebAPI-CQRS.csprojAssemblyReference.cache
